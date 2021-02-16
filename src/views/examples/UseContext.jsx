@@ -16,7 +16,7 @@ const UseContext = (props) => {
         })
     }
 
-    const { number, setNumber } = useContext(AppContext)
+    const { number, text, setNumber } = useContext(AppContext)
 
     return (
         <div className="UseContext">
@@ -28,7 +28,6 @@ const UseContext = (props) => {
             <div className="center">
                 <span className="text">{state.text}</span>
                 <span className="text">{state.number}</span>
-
                 <div>
                     <button className="btn"
                         onClick={() => addNumber(-1)} >-1</button>
@@ -39,6 +38,7 @@ const UseContext = (props) => {
 
             <SectionTitle title="Exercício #02" />
             <div className="center">
+                <span className="text">{text}</span>
                 <span className="text">{number}</span>
                 <div>
                     <button className="btn"

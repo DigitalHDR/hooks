@@ -14,9 +14,10 @@ const Store = props => {
         setState({
             ...state,
             [key]: value
+            //key : value vai alterar somente um valor específico
         })
     }
-    
+
     return (
         <AppContext.Provider value={{
             number: state.number,
